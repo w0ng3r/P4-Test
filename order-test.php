@@ -1,9 +1,24 @@
 <?php
 //page_test.php
+@package unitTesting
+@authorA: George Wong: <w0ng3r@gmail.com>
+@authorB: Grace Sangonpiyaphan: <ggrace5599@gmail.com>
+@version 1.0 2015/04/30 
+@link http://w0ng3r.dlinkddns.com/P4/run_all.php
+@license http://www.apache.org/licenses/LICENSE-2.0
+@see function-test.php
+@see git_ItemClass.php
+@see git_ItemFunctions.php
+@see git_ItemOrderPage.php
+@see run_all.php
+@see suite.php
+@see test-ItemClass.php
+@todo none 
 
 require_once 'simpletest/autorun.php';
 require_once 'simpletest/web_tester.php';
 
+//test page with items selected
 class TestPage extends WebTestCase {
 
     function testSelectQuantity() 
@@ -20,7 +35,7 @@ class TestPage extends WebTestCase {
 
     }
 
-    
+    //test page with the selected orders were submited
     function testSubmitOrder()
     {
      
