@@ -1,10 +1,24 @@
 <?php
 //function_test.php
-
+ @package unitTesting
+ @authorA: George Wong: <w0ng3r@gmail.com>
+ @authorB: Grace Sangonpiyaphan: <ggrace5599@gmail.com>
+ @version 1.0 2015/04/30 
+ @link http://w0ng3r.dlinkddns.com/P4/run_all.php
+ @license http://www.apache.org/licenses/LICENSE-2.0
+ @see git_ItemClass.php
+ @see git_ItemFunctions.php
+ @see git_ItemOrderPage.php
+ @see order-test.php
+ @see run_all.php
+ @see suite.php
+ @see test-ItemClass.php
+ @todo none 
 require_once 'simpletest/autorun.php';
 include 'git_itemFunctions.php';
 include 'git_ItemClass.php';
 
+//test order page/form by testing function to calculate the total and subtotal
 class TestofOrderPage extends UnitTestCase {
 
     function TestCalculateTotal()
@@ -47,7 +61,7 @@ class TestofOrderPage extends UnitTestCase {
                            );
         $this->assertEqual(calculateTotal($orderArray, $menuItems), 0, "Total is correct");
     }
-    
+    //test to create a new row of new item
     function TestGenerateItemRow() 
     {
         
@@ -78,7 +92,7 @@ class TestofOrderPage extends UnitTestCase {
         </tr>
         ';
 
-    
+        //print a tesing on the new row generated
         $this->assertEqual(generateItemRow($tempItem), $expected );
         
         
