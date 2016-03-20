@@ -7,19 +7,16 @@
 @link http://w0ng3r.dlinkddns.com/P4/run_all.php
 @license http://www.apache.org/licenses/LICENSE-2.0
 @see function-test.php
-@see SQL.sql
-@see git_ItemClass.php
 @see git_ItemFunctions.php
 @see git_ItemOrderPage.php
 @see order-test.php
 @see run_all.php
 @see suite.php
-@see test-ItemClass.php
 @todo none 
 require_once 'simpletest/autorun.php';
 
 include 'git_ItemClass.php';
-
+//this is to test item class
 class TestItemClass extends UnitTestCase {
     //this is a function to test a new item adding into the list
     function TestConstructor()
