@@ -5,7 +5,7 @@
    @authorB: Grace Sangonpiyaphan: <ggrace5599@gmail.com>
    @version 1.0 2015/04/30 
    @link http://w0ng3r.dlinkddns.com/P4/run_all.php
-   @license http://www.apache.org/licenses/LICENSE-2.0
+   @license http://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
    @see function-test.php
    @see git_ItemClass.php
    @see git_ItemFunctions.php
