@@ -1,6 +1,6 @@
 <?php
 //test-ItemClass.php
-@package RSS-FEEDS
+@package unitTesting
 @authorA: George Wong: <w0ng3r@gmail.com>
 @authorB: Grace Sangonpiyaphan: <ggrace5599@gmail.com>
 @version 1.0 2015/04/30 
